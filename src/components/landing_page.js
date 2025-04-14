@@ -1,4 +1,5 @@
 import { poppins } from "@/utils/fonts";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 function LandingPage() {
@@ -14,37 +15,36 @@ function LandingPage() {
                     <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />
                 </svg>
             </div>
-
-            <div className={`${poppins.className} flex flex-col justify-center items-center h-screen px-20`}>
-                <div className="flex items-center justify-between">
-                    <div>
+            <div className={`${poppins.className} flex flex-col justify-center items-center h-screen px-4`}>
+                <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
+                    <div className="flex flex-col">
                         <h1>HELLO, MY NAME IS</h1>
                         <h1 className="text-6xl mt-2">GABRIEL MAGDUGO</h1>
                         <p className="mt-5">Software Developer</p>
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-7 mt-4" fill="white">
-                            <title>GitHub</title>
-                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                        </svg>
-                        <a href="/MAGDUGO_RESUME_2025.pdf" target="_blank" rel="noopener noreferrer"
-                        >
-                            <button className="mt-10 bg-white text-black rounded-full px-4 py-3 hover:scale-105 transition-transform duration-200 cursor-pointer"> Download Resume</button>
+                        <div className="flex gap-4 mt-4">
+                            <a href="https://github.com/TBNRjaborel" target="_blank" rel="noopener noreferrer">
+                            <FaGithub className="w-8 h-8" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/gabriel-magdugo-762453215/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin className="w-8 h-8" />
+                            </a>
+                        </div>
+                        <a href="/MAGDUGO_RESUME_2025.pdf" target="_blank" rel="noopener noreferrer">
+                            <button className="mt-10 bg-white text-black rounded-full px-4 py-3 hover:scale-105 transition-transform duration-200 cursor-pointer">
+                            Download Resume
+                            </button>
                         </a>
                     </div>
-                    <div className="relative w-105 h-105 flex items-center justify-center ml-30">
+                    <div className="w-100 h-100 relative ml-10">
                         <Image
                             src="/images/my-photo.jpg"
                             alt="My photo"
                             layout="fill"
-                            className="rounded-full transition-transform duration-200 hover:scale-105"
-                            
+                            className="rounded-full object-cover hover:scale-105 transition-transform duration-200"
                         />
                     </div>
                 </div>
-                
-    
             </div>
-
-    
         </div>
     );
 }
