@@ -13,7 +13,7 @@ function AboutPage(){
                 </p>
                 <p className="mt-10 text-justify max-w-screen-lg">Exposed in multiple frameworks and technologies, I am flexible in developing software solutions in web 
                 applications or a mobile application setup. I have experience in various technologies pertaining Full Stack 
-                Software Development (React Native, React, Supabase, Node). Whenever a new tech stack is introduced I believe 
+                Software Development (React Native, React, NextJS, Supabase, Node). Whenever a new tech stack is introduced I believe 
                 I am capable of learning and adjusting to it.
                 </p>
             </div>
