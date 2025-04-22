@@ -1,18 +1,25 @@
 import { poppins } from "@/utils/fonts";
 import { FaGithub, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
+import Image from "next/image";
 function ProjectsPage(){
     return(
         <div>
-            <div className={`${poppins.className} flex flex-col justify-center items-center min-h-screen`}>
+            <div className={`${poppins.className} flex flex-col items-center min-h-screen`}>
                 <h1 className="text-6xl">
                     Projects
                 </h1>
                 <div className="m-20 flex flex-wrap gap-10">
                     <div className="shadow-xl bg-gray-900 text-white rounded-lg p-5 w-[400px] relative">
-                        <div className="bg-gray-950 rounded-2xl p-30"> {/*placeholder for image of app/web app*/} 
-
+                        <div className="flex justify-center items-center">
+                            <Image
+                                src="/images/profile_logo.svg"
+                                alt="Website Screenshot"
+                                width={200}
+                                height={100}
+                                className="hover:scale-105 transition-transform duration-200 filter brightness-50 invert"
+                            />
                         </div>
-                        <h2 className="text-2xl my-10">
+                        <h2 className="text-2xl text-center font-bold my-10">
                             Personal Website 
                         </h2>
                         <p>
@@ -32,10 +39,16 @@ function ProjectsPage(){
                         </div> */}
                     </div>
                     <div className="shadow-xl bg-gray-900 text-white rounded-lg p-5 w-[400px] relative">
-                        <div className="bg-gray-950 rounded-2xl p-30"> {/*placeholder for image of app/web app*/} 
-
+                        <div className="flex justify-center items-center"> 
+                            <Image
+                                src="/images/dog.svg"
+                                alt="Dog Image"
+                                width={200}
+                                height={100}
+                                className="hover:scale-105 transition-transform duration-200 filter brightness-50 invert"
+                            />
                         </div>
-                        <h2 className="text-2xl my-10">
+                        <h2 className="text-2xl text-center font-bold my-10">
                             PawHuway 
                         </h2>
                         <p>
@@ -53,14 +66,20 @@ function ProjectsPage(){
                         </div>
                     </div>
                     <div className="shadow-xl bg-gray-900 text-white rounded-lg p-5 w-[400px] relative">
-                        <div className="bg-gray-950 rounded-2xl p-30"> {/*placeholder for image of app/web app*/} 
-
+                        <div className="flex flex-col items-center"> 
+                            <Image
+                                src="/images/jeep.svg"
+                                alt="Jeepney Image"
+                                width={200}
+                                height={100}
+                                className="hover:scale-105 transition-transform duration-200 filter brightness-50 invert"
+                            />
                         </div>
-                        <h2 className="text-2xl my-10">
+                        <h2 className="text-2xl text-center font-bold my-10">
                             Kapyot
                         </h2>
                         <p>
-                            A jeepney booking web application that allows users to book a ride and pay for it online.
+                            A jeepney booking web application concept that allows users to book a ride and pay for it online.
                         </p>
                         <a href="https://github.com/mon-ok/kapyot" target="_blank" rel="noopener noreferrer" className="absolute bottom-5 right-5 ">
                             <FaGithub className="w-6 h-6"/>
