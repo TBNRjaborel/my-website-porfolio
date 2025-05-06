@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 function ProjectsPage(){
     return(
-        <div>
+        <div id="projects">
             <div className={`${poppins.className} flex flex-col items-center min-h-screen`}>
                 <h1 className="text-6xl">
                     Projects
@@ -26,7 +26,7 @@ function ProjectsPage(){
                             My Personal Website Portfolio, showcasing my projects and skills as a software developer.
                         </p>
                         <a href="https://github.com/TBNRjaborel/my-website-porfolio" target="_blank" rel="noopener noreferrer " className="absolute bottom-5 right-5">
-                            <FaGithub className="w-6 h-6"/>
+                            <FaGithub className="w-6 h-6 hover:scale-110 duration-200"/>
                         </a>
                         {/* <div className="flex justify-end mt-5">
                             <a
@@ -61,7 +61,7 @@ function ProjectsPage(){
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaGithub className="w-6 h-6 text-white cursor-pointer hover:scale-110 transition-transform duration-200" />
+                                <FaGithub className="w-6 h-6 text-white cursor-pointer hover:scale-110 duration-200" />
                             </a>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ function ProjectsPage(){
                             A jeepney booking web application concept that allows users to book a ride and pay for it online.
                         </p>
                         <a href="https://github.com/mon-ok/kapyot" target="_blank" rel="noopener noreferrer" className="absolute bottom-5 right-5 ">
-                            <FaGithub className="w-6 h-6"/>
+                            <FaGithub className="w-6 h-6 hover:scale-110 duration-200"/>
                         </a>
                     </div>
                     
