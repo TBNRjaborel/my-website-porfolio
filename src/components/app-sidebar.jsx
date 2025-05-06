@@ -3,6 +3,7 @@ import { Info, User, Component, BookOpenText} from "lucide-react"
 import { poppins } from "@/utils/fonts";
 
 
+
 export function AppSideBar() {
     const items =[
         {
@@ -26,6 +27,8 @@ export function AppSideBar() {
             icon: BookOpenText
         }
     ]
+
+    // const [isOpen,setIsOpen] = useState(false)
     return (
         
         <Sidebar className="flex ">
