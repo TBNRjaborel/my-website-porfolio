@@ -6,17 +6,24 @@ import Certifications from "@/components/certifications";
 import { SidebarProvider,SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSideBar } from "@/components/app-sidebar"
 
+
+
 export default function Home() {
+  
   return (
-    <div>
-      <SidebarProvider className="absolute" >
-        <AppSideBar />
-        <SidebarTrigger className="m-10 absolute z-10" />
-      </SidebarProvider>
-      <LandingPage/>
-      <AboutPage/>
-      <ProjectsPage/>
-      <Certifications/>
+    <div className="relative" >
+      <div className="absolute">
+        <SidebarProvider >
+          <AppSideBar />
+          <SidebarTrigger className="m-10 fixed top-0 left-0 z-50 pointer-events-auto" />
+        </SidebarProvider>
+      </div>
+      <div className="w-full">
+        <LandingPage />
+        <AboutPage />
+        <ProjectsPage />
+        <Certifications />
+      </div>
     </div>
   );
 }

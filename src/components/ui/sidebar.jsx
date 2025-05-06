@@ -104,7 +104,7 @@ function SidebarProvider({
     setOpenMobile,
     toggleSidebar,
   }), [state, open, setOpen, isMobile, openMobile, setOpenMobile, toggleSidebar])
-
+  // const pointerEventsStyle = open ? 'auto' : 'none'
   return (
     <SidebarContext.Provider value={contextValue}>
       <TooltipProvider delayDuration={0}>
@@ -114,11 +114,12 @@ function SidebarProvider({
             {
               "--sidebar-width": SIDEBAR_WIDTH,
               "--sidebar-width-icon": SIDEBAR_WIDTH_ICON,
+              // pointerEvents: pointerEventsStyle,  
               ...style
             }
           }
           className={cn(
-            "group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar flex min-h-svh w-full",
+            "group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar flex min-h-svh w-full ",
             className
           )}
           {...props}>
@@ -207,6 +208,7 @@ function Sidebar({
           variant === "floating" || variant === "inset"
             ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]"
             : "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l",
+            "group-data-[state=collapsed]:pointer-events-none group-data-[state=expanded]:pointer-events-auto",
           className
         )}
         {...props}>
@@ -242,7 +244,7 @@ function SidebarTrigger({
       }}
       {...props}>
       {/* <PanelLeftIcon /> */}
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke={isClicked ? "black" : "white"} className="hover:scale-150 transition-transform duration-200 size-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke={isClicked ? "black " : "white"} className="hover:scale-150 transition-transform duration-200 size-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
       </svg>
       <span className="sr-only">Toggle Sidebar</span>
