@@ -4,12 +4,12 @@ import Image from "next/image";
 
 function LandingPage() {
     return (
-        <div>
-            <div className="absolute w-10 h-10 top-10 left-10 cursor-pointer flex items-center">
+        <div id="home">
+            {/* <div className="absolute w-10 h-10 top-10 left-10 cursor-pointer flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="hover:scale-150 transition-transform duration-200 size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                 </svg>
-            </div>
+            </div> */}
             <div className="absolute w-10 h-10 top-10 right-10 cursor-pointer flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4 hover:scale-150 transition-transform duration-200 justify-end">
                     <path d="M14.438 10.148c.19-.425-.321-.787-.748-.601A5.5 5.5 0 0 1 6.453 2.31c.186-.427-.176-.938-.6-.748a6.501 6.501 0 1 0 8.585 8.586Z" />

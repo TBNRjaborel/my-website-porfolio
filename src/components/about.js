@@ -3,7 +3,7 @@ import { poppins } from "@/utils/fonts";
 
 function AboutPage(){
     return(
-        <div className ={`${poppins.className} flex flex-col items-center h-screen`}>
+        <div id= "about" className ={`${poppins.className} flex flex-col items-center h-screen`}>
             <h1 className="text-6xl">About Me</h1>
             <div className="shadow-lg mt-10 p-10 bg-gray-900 rounded-lg max-w-screen-lg">
                 <p className="max-w-screen-lg text-justify">
